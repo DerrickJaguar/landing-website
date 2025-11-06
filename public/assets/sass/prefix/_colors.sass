@@ -1,0 +1,36 @@
+$darkColor: #181818
+$dark2Color: #242425
+$blueColor: #01b6f7
+$darkBlueColor: #191b64
+$purpleColor: #694dfd
+$greenColor: #78d4bb
+$martiniqueColor: #382c4d
+$orangeColor: #fdac72
+$whiteColor: #FFF
+$sunsetOrangeColor: #ff5247
+$lightPurpleColor: #8764ff
+$royalBlue: #563df6
+
+$colors: "white" $whiteColor, "dark" $darkColor, "dark2" $dark2Color, "blue" $blueColor, "dark-blue" $darkBlueColor, "purple" $purpleColor, "green" $greenColor, "martinique" $martiniqueColor, "orange" $orangeColor, "sunset-orange" $sunsetOrangeColor, "light-purple" $lightPurpleColor, "royal-blue" $royalBlue
+
+@each $name, $color in $colors
+  .color-#{$name}-theme
+    color: $color
+  @for $i from 1 through 100
+    .color-#{$name}-theme-#{$i}
+      color: transparentize($color, 1 - ($i / 100))
+
+  .bgcolor-#{$name}-theme
+    background-color: $color
+  //  hover colors
+  .hover-color-#{$name}-theme:hover
+    color: $color
+  .hover-bgcolor-#{$name}-theme:hover
+    background-color: $color
+
+  .bdc-#{$name}-theme
+    border-color: $color
+  .hover-bdc-#{$name}-theme
+    border-color: $color
+
+@import "gradients"

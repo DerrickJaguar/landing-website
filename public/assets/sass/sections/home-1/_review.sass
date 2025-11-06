@@ -1,0 +1,44 @@
+.review-block-media-1
+  box-shadow: 0 0 16px 0 rgba(211, 207, 215, 0.35)
+  padding: 54px 45px 58px 55px
+  @include mediaMD
+    padding: 20px 10px
+
+.review-block-circle-photo
+  background: url(../media/testimonial/review-bg-1.png) no-repeat scroll 0 bottom transparent
+  background-size: contain
+  display: inline-block
+  @extend .w-435px
+  @extend .h-435px
+  @include mediaL
+    width: 350px
+    height: 400px
+  @include mediaMD
+    width: 250px
+    height: 300px
+
+.review-block-media-1-play-btn
+  width: 82px
+  height: 82px
+  opacity: 0.85
+  transition: all 300ms linear 0s
+
+  &.icon-bottom-right
+    bottom: 20px
+    right: 20px
+
+  &.icon-center
+    top: 50%
+    left: 50%
+    margin-left: -41px
+    margin-top: -41px
+
+  &:hover, &:focus
+    text-decoration: none
+    opacity: 1
+
+.review-block-media-1-stars
+  color: #fe8c47
+
+.home-2-review-play
+  z-index: 2

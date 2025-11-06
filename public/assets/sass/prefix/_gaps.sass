@@ -1,0 +1,62 @@
+// Margins
+@for $i from 0 through 100
+  .m-#{$i * 5}px
+    margin: #{$i * 5}px
+  .mx-#{$i * 5}px
+    margin-left: #{$i * 5}px
+    margin-right: #{$i * 5}px
+  .my-#{$i * 5}px
+    margin-top: #{$i * 5}px
+    margin-bottom: #{$i * 5}px
+  .mt-#{$i * 5}px
+    margin-top: #{$i * 5}px
+  .mr-#{$i * 5}px
+    margin-right: #{$i * 5}px
+  .mb-#{$i * 5}px
+    margin-bottom: #{$i * 5}px
+  .ml-#{$i * 5}px
+    margin-left: #{$i * 5}px
+
+// Negative Margins
+@for $i from 0 through 100
+  .m--#{$i * 5}px
+    margin: -#{$i * 5}px
+  .mx--#{$i * 5}px
+    margin-left: -#{$i * 5}px
+    margin-right: -#{$i * 5}px
+  .my--#{$i * 5}px
+    margin-top: -#{$i * 5}px
+    margin-bottom: -#{$i * 5}px
+  .mt--#{$i * 5}px
+    margin-top: -#{$i * 5}px
+  .mr--#{$i * 5}px
+    margin-right: -#{$i * 5}px
+  .mb--#{$i * 5}px
+    margin-bottom: -#{$i * 5}px
+  .ml--#{$i * 5}px
+    margin-left: -#{$i * 5}px
+
+// Padding
+@for $i from 0 through 100
+  .p-#{$i * 5}px
+    padding: #{$i * 5}px
+  .px-#{$i * 5}px
+    padding-left: #{$i * 5}px
+    padding-right: #{$i * 5}px
+  .py-#{$i * 5}px
+    padding-top: #{$i * 5}px
+    padding-bottom: #{$i * 5}px
+  .pt-#{$i * 5}px
+    padding-top: #{$i * 5}px
+  .pr-#{$i * 5}px
+    padding-right: #{$i * 5}px
+  .pb-#{$i * 5}px
+    padding-bottom: #{$i * 5}px
+  .pl-#{$i * 5}px
+    padding-left: #{$i * 5}px
+
+// Responsive
+@import "gaps/lg"
+@import "gaps/md"
+@import "gaps/sm"
+@import "gaps/xs"

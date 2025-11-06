@@ -1,0 +1,36 @@
+.home-banner-4
+  //height: 100vh
+  background: url(../media/banners/home-4/bg-desktop.png) no-repeat scroll right top transparent
+  background-size: contain
+
+.home-banner-4-title
+  @extend .font-cabin
+  @extend .fz-56
+  @extend .mt-190px
+  @extend .mb-25px
+  @extend .lh-1-17
+  @extend .fw-600
+  @media (max-width: 1366px)
+    font-size: 45px
+    br
+      display: none
+  @include mediaL
+    margin-top: 120px
+    font-size: 38px
+  @include mediaMD
+    margin-top: 100px
+    margin-bottom: 15px
+    font-size: 28px
+
+.home-banner-4-get-started
+  @extend .mb-170px
+  @media (max-width: 1366px)
+    margin-bottom: 100px
+  @include mediaL
+    margin-bottom: 40px
+  @include mediaMD
+    margin-bottom: 25px
+
+.home-banner-4-title, .home-banner-4-texts
+  @include mediaSM
+    text-shadow: 0 0 2px $darkBlueColor

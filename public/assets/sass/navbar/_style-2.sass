@@ -1,0 +1,60 @@
+.navbar-style-2
+  z-index: 999999
+  @extend .p-30px
+  @extend .py-lg-20px
+  @extend .px-lg-15px
+  .navbar-collapse
+    @extend .transition-default
+    @include mediaMD
+      order: 5
+      background: #ffffff
+      margin-top: 5px
+      padding: 20px 5px
+      text-align: right
+      box-shadow: 0 14px 35px 0 rgba(181, 188, 201, 0.35)
+  .navbar-brand
+    @extend .p-0px
+    @extend .mr-40px
+    @extend .mr-xs-0px
+    @extend .hover-color-dark-blue-theme
+
+  .btn-signup
+    @extend .color-purple-theme
+    @extend .bgcolor-white-theme
+    @extend .px-35px
+    @extend .px-xs-20px
+    @extend .lh-50px
+    @extend .py-0px
+    @extend .hover-bgcolor-purple-theme
+    @extend .hover-color-white-theme
+
+  .navbar-toggler
+    order: 4
+    @extend .ml-20px
+    @extend .ml-xs-5px
+    @extend .bdc-white-theme
+    @extend .transition-default
+    &:focus
+      outline: none
+    &[aria-expanded="true"]
+      @extend .bgcolor-white-theme
+
+.navbar-nav-style-2
+  .nav-item
+    .nav-link
+      @extend .py-0px
+      @extend .px-15px
+      @extend .font-rubik
+      @extend .fz-16
+      @extend .fz-lg-14
+      @extend .lh-2-25
+      @extend .color-dark-blue-theme
+  .dropdown-item
+    @extend .font-rubik
+    @extend .fz-14
+    @extend .lh-2-25
+  .dropdown-menu
+    @include mediaMD
+      border: none
+      box-shadow: 0 14px 35px 0 rgba(181, 188, 201, 0.35)
+      text-align: right

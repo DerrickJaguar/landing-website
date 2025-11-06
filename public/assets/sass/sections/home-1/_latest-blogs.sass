@@ -1,0 +1,196 @@
+.latest-blogs-1
+  .section-title
+    &, + p
+      max-width: 770px
+
+.latest-blog-1-style
+  background: #ffffff
+  box-shadow: 0 22px 28px 0 rgba(83, 83, 83, 0.35)
+  @extend .py-50px
+  @extend .px-30px
+  @extend .p-lg-25px
+  &:hover,&:focus
+    .latest-blog-1-style-title
+      color: $blueColor
+    .latest-blog-1-style-link
+      color: #181818
+      text-decoration: none
+      &::before
+        border-width: 9px
+
+
+.latest-blog-1-style-title
+  @extend .color-dark-theme
+  @extend .lh-1-17
+  @extend .mb-15px
+  @extend .transition-default
+
+.latest-blog-1-style-meta
+  @extend .mb-30px
+  @extend .mb-lg-15px
+
+.latest-blog-1-style-excerpt
+  @extend .mb-20px
+  line-height: 1.75
+
+.latest-blog-1-style-link
+  @extend .color-dark-theme
+  @extend .lh-1
+  &::before
+    content: ''
+    width: 18px
+    height: 18px
+    border: 2px solid $blueColor
+    display: inline-block
+    margin-right: 10px
+    border-radius: 100%
+    transition: all 300ms linear 0s
+
+.classic-blog-style-body
+  box-shadow: 0 0 28px 0 rgba(200, 197, 213, 0.35)
+
+.classic-blog-category-style
+  background: #f0ebff
+  &:hover
+    background: $darkBlueColor
+
+.blog-pagination
+  & > a
+    background: #f7f4ff
+    color: $lightPurpleColor
+    &:hover
+      color: #ffffff
+      background: $lightPurpleColor
+
+.blog-search-input
+  .form-control
+    border-color: #eaedf3
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    padding-left: 27px
+    height: 52px
+    box-shadow: 0 16px 20px 0 rgba(204, 214, 235, 0.35)
+.input-group-append
+    .btn
+      background-color: #ffffff
+      border-left: none
+      border-color: #eaedf3
+      border-top-right-radius: 10px
+      border-bottom-right-radius: 10px
+      @extend .px-15px
+      color: transparentize(#b9ccd7, 0.3)
+
+
+.single-blog-body
+  p
+    @extend .mb-25px
+    @extend .font-rubik
+    @extend .fz-16
+    @extend .lh-1-5
+    @extend .color-dark-blue-theme-80
+  h3, h2, h4, h5
+    @extend .font-cabin
+    @extend .fw-500
+    @extend .lh-1-17
+    @extend .mb-30px
+    @extend .color-dark-blue-theme
+  h2
+    @extend .fz-38
+  h3
+    @extend .fz-32
+  h4
+    @extend .fz-24
+  h5
+    @extend .fz-18
+
+  img
+    @extend .mb-40px
+    max-width: 100%
+    height: auto
+    
+.blockquote-style-1
+  background: url(../media/icons/quotation.png) no-repeat scroll center center #f8f6ff
+
+.blog-share-widget-style
+  a
+    &.fa-facebook-f
+      color: #556dd3
+    &.fa-dropbox
+      color: #007ee5
+    &.fa-twitter
+      color: #55acee
+    &.fa-linkedin-in
+      color: #0077b5
+    &.fa-pinterest-p
+      color: #bd081c
+    &.fa-google-plus-g
+      color: #dd4b39
+    &.fa-print
+      color: #65e18e
+    &:hover
+      color: $darkBlueColor !important
+
+.related-blog-styles
+  @include mediaSM
+    flex-direction: column
+
+.related-blog-style
+  box-shadow: 0 16px 20px 0 rgba(204, 214, 235, 0.35)
+  margin: 10px !important
+  @extend .bgcolor-white-theme
+  & > .card-body
+    text-align: center
+    @extend .p-25px
+    @extend .font-rubik
+    @extend .fz-16
+    @extend .lh-1-5
+    @extend .color-dark-blue-theme
+    @extend .transition-default
+    @extend .hover-text-dec-none
+    @extend .hover-color-blue-theme
+
+.single-blog-pager
+  .prev-item, .next-item
+    @extend .hover-text-dec-none
+    @extend .transition-default
+    .rounded-circle
+      background: #f5f2ff
+      color: $purpleColor
+      @extend .transition-default
+    &:hover
+      .rounded-circle
+        background-color: $darkBlueColor
+        color: #ffffff
+
+.comment-form
+  .form-control
+    border-color: #f5f2ff
+
+  textarea
+    @extend .h-155px
+
+.form-save-control
+  & + .form-save-label
+    .rounded-circle
+      border: 1px solid #f5f2ff
+      border-radius: 50%
+      box-shadow: 0 7px 16px 0 rgba(213, 210, 210, 0.4)
+      @extend .transition-default
+  &:checked
+    & + .form-save-label
+      .rounded-circle
+        border: 8px solid $darkBlueColor
+
+.comemnt-submit-btn
+  @extend .color-purple-theme
+  @extend .hover-color-white-theme
+  @extend .px-25px
+  @extend .py-10px
+  @extend .lh-2
+  border: 1px solid #f5f2ff
+  background: #ffffff
+  @extend .hover-bgcolor-dark-blue-theme
+  @extend .transition-default
+  @extend .fz-14
+  @extend .font-rubik
+  @extend .bdrs-10px

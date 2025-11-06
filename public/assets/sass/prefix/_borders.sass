@@ -1,0 +1,39 @@
+@for $i from 1 through 100
+  .bdrs-#{$i}px
+    border-radius: #{$i}px
+  .bdtlrs-#{$i}px
+    border-top-left-radius: #{$i}px
+  .bdtrrs-#{$i}px
+    border-top-right-radius: #{$i}px
+  .bdblrs-#{$i}px
+    border-bottom-left-radius: #{$i}px
+  .bdbrrs-#{$i}px
+    border-bottom-right-radius: #{$i}px
+
+  .bdrs-#{$i}p
+    border-radius: calc(#{$i} * 1%)
+  .bdtlrs-#{$i}p
+    border-top-left-radius: calc(#{$i} * 1%)
+  .bdtrrs-#{$i}p
+    border-top-right-radius: calc(#{$i} * 1%)
+  .bdblrs-#{$i}p
+    border-bottom-left-radius: calc(#{$i} * 1%)
+  .bdbrrs-#{$i}p
+    border-bottom-right-radius: calc(#{$i} * 1%)
+
+$styles: "solid", "dotted", "dot-dash", "dot-dot-dash", "dashed", "groove"
+$sides: "top", "right", "bottom", "left"
+
+@each $style in $styles
+  .bds-#{$style}
+    border-style: #{$style}
+  @each $side in $sides
+    .bds-#{$side}-#{$style}
+      border-#{$side}-style: #{$style}
+
+@for $i from 1 through 50
+  .bdw-#{$i}
+    border-width: #{$i}px
+  @each $side in $sides
+    .bdw-#{$side}-#{$i}
+      border-#{$side}-width: #{$i}px

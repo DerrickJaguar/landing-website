@@ -1,0 +1,45 @@
+.navbar-style-4
+  z-index: 999999
+  @extend .p-30px
+  @extend .py-md-20px
+  @extend .px-md-15px
+  justify-content: end
+  .navbar-brand
+    padding: 0
+    margin-right: 30px
+
+  .navbar-nav-style-2
+    .nav-item
+      .nav-link
+        color: #ffffff
+        @include mediaMD
+          color: $darkBlueColor
+        &::after
+          display: none
+      .dropdown-menu
+        @include mediaMD
+          border: none
+          box-shadow: 0 14px 35px 0 rgba(181, 188, 201, 0.35)
+          text-align: right
+
+  .navbar-toggler
+    order: 4
+    @extend .ml-20px
+    @extend .ml-xs-10px
+    @extend .bdc-white-theme
+    @extend .transition-default
+    &:focus
+      outline: none
+    &[aria-expanded="true"]
+      @extend .bgcolor-white-theme
+
+  .navbar-collapse
+    @extend .transition-default
+    @include mediaMD
+      order: 5
+      background: #ffffff
+      margin-top: 5px
+      padding: 20px 5px
+      text-align: right
+      box-shadow: 0 14px 35px 0 rgba(181, 188, 201, 0.35)
+

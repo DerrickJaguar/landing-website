@@ -1,0 +1,35 @@
+.container
+  @media (min-width: 1260px)
+    max-width: 1200px
+
+@import "prefix/mixins"
+@import "prefix/texts"
+@import "prefix/colors"
+@import "prefix/gaps"
+@import "prefix/width-height"
+@import "prefix/btn"
+@import "prefix/shadows"
+@import "prefix/borders"
+@import "prefix/rotation"
+@import "prefix/positions"
+
+.section-title
+  &, & + p
+    max-width: 900px
+    margin-left: auto
+    margin-right: auto
+
+@for $i from 1 through 100
+  .op-#{$i}
+    opacity: #{$i / 100}
+
+  .hover-op-#{$i}:hover
+    opacity: #{$i / 100}
+
+@for $i from -1 through 10
+  .z-index-#{$i}
+    z-index: $i
+
+.form-control
+  @include placeholder
+    @extend .color-dark-blue-theme-60

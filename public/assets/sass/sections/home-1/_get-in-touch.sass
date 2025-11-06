@@ -1,0 +1,61 @@
+.get-in-touch-1
+  background-image: url(../media/get-in-touch/rectangle-1.png), url(../media/get-in-touch/rectangle-2.png)
+  background-position: center center
+  background-repeat: no-repeat
+  //background-size: contain
+  @extend .pt-55px
+  @extend .pb-45px
+  //@extend .py-lg-30px
+  //@extend .py-md-20px
+  //@include mediaL
+  //  background-size: 960px auto, contain
+  //@include mediaMD
+  //  background-size: 720px auto, contain
+  @include mediaSM
+    background-size: cover
+  &.footer-aligned
+    @extend .mb--10px
+  p
+    @extend .mb-20px
+    line-height: 1.17
+
+
+.contact-page-style
+  background: url(../media/contact-bg.png) no-repeat scroll center top transparent
+
+.contact-us-banner-style
+  background: url(../media/contact-banner-bg.png) no-repeat scroll center top transparent
+  background-size: cover
+
+.contact-form-box
+  box-shadow: 0 7px 16px 0 rgba(213, 210, 210, 0.4)
+  .bdrs-10px
+    border-color: #e8e8e8
+
+  .form-control
+    color: $darkBlueColor
+    &:focus
+      box-shadow: none
+
+  textarea
+    &.form-control
+      height: 172px
+
+
+.contact-social-media-links
+  .nav-item
+    .nav-link
+      padding: 0
+      width: 40px
+      line-height: 40px
+      font-size: 18px
+      border-radius: 100%
+      color: $darkBlueColor
+      text-align: center
+      @extend .transition-default
+      &:hover
+        color: #ffffff
+        @extend .blue-darkpurple-gradient
+
+.bg-shade
+  background: url(../media/bg-shade.png) no-repeat scroll center top transparent

@@ -1,0 +1,110 @@
+.portfolio-grid-style-1-link
+  @extend .hover-text-dec-none
+  @extend .lh-1-17
+  @extend .fz-16
+  @extend .fz-md-14
+  @extend .font-rubik
+  @extend .color-dark-blue-theme
+  @extend .transition-default
+  @extend .hover-color-green-theme
+  display: inline-flex
+  border-bottom: 1px solid $darkBlueColor
+  &:hover
+    border-bottom-color: $greenColor
+
+
+.portfolio-filtered-section
+  .container-fluid
+    max-width: 1776px
+
+.portfolio-filter-group
+  @include mediaSM
+    flex-wrap: wrap
+  .filter
+    @extend .fz-20
+    @extend .fz-sm-18
+    @extend .font-cabin
+    @extend .fw-500
+    @extend .color-dark-blue-theme
+    @extend .mr-25px
+    @extend .mr-sm-15px
+    @extend .transition-default
+
+    background: none
+    border: none
+    padding: 0
+    line-height: 1
+    white-space: nowrap
+    @include mediaSM
+      margin-bottom: 10px
+    &:last-of-type
+      @extend .mr-0
+    &:hover, &.is-checked, &:focus
+      @extend .color-royal-blue-theme
+      outline: none
+
+.portfolio-3col-item
+  background: #17142f
+  overflow: hidden
+  .img-fluid
+    @extend .transition-default
+  .hover-content
+    bottom: -100%
+    padding: 22px 23px
+    @extend .l-0px
+    @extend .r-0px
+    @extend .transition-default
+    .fas
+      align-self: end
+      border: 1px solid #ffffff
+      border-radius: 100%
+      @extend .hover-text-dec-none
+      @extend .color-white-theme
+      @extend .fz-20
+
+  &:hover
+    .img-fluid
+      opacity: 0.7
+    .hover-content
+      bottom: 0
+      top: auto
+
+.portfolio-4col-item
+  overflow: hidden
+  & > a
+    top: -65px
+    right: -65px
+    background-color: transparent
+    width: 60px
+    height: 60px
+    @include mediaXS
+      width: 40px
+      height: 40px
+    &:hover
+      text-decoration: none
+      background-color: transparentize($royalBlue, 0.28)
+  &:hover
+    & > a
+      @extend .t-20px
+      @extend .r-20px
+
+.single-project-pager-item
+  @extend .color-dark-blue-theme
+  @extend .hover-text-dec-none
+  @extend .hover-color-green-theme
+  @extend .transition-default
+  @extend .fz-16
+  @extend .lh-1-17
+  @extend .font-rubik
+  display: inline-flex
+  span
+    border-bottom: 1px dashed $darkBlueColor
+  &:hover
+    span
+      border-bottom-color: $greenColor
+
+.single-portfolio-meta-2
+  @include mediaSM
+    width: 50%
+    &:last-of-type
+      width: 100%

@@ -1,0 +1,28 @@
+.footer-style-2
+  padding: 80px 0 25px
+  background: url(../media/footer/footer-bg-2.png) no-repeat scroll center bottom #0e101b
+  &.footer-bg-pricing
+    background-image: url(../media/footer/footer-bg-pricing.png)
+    background-color: #0e1650
+
+  .footer-style-1-mobile-apps
+    @include mediaLR
+      padding-top: 35px
+      border-top: 1px solid #202439
+
+  .footer-style-1-social
+    .nav-item
+      .nav-link
+        &:hover
+          background-color: $purpleColor
+
+  .subscription-style-form
+    box-shadow: none
+
+  .copyright-footer-1
+    @include mediaMD
+      padding-top: 15px
+      border-top: 1px solid #202439
+    @include mediaSM
+      text-align: center
+

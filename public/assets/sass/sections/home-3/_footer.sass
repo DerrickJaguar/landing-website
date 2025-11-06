@@ -1,0 +1,24 @@
+.footer-style-3
+  background: url(../media/footer/footer-bg-3.png) no-repeat scroll center bottom transparent
+  background-size: cover
+
+  .footer-style-1-mobile-apps
+    @include mediaLR
+      padding-top: 35px
+      border-top: 1px solid #dfe5ef
+
+  .footer-style-1-social
+    .nav-item
+      .nav-link
+        color: $darkBlueColor
+        &:hover
+          color: #ffffff
+          background-color: $greenColor
+
+  .copyright-footer-1
+    @include mediaMD
+      padding-top: 15px
+      border-top: 1px solid #dfe5ef
+    @include mediaSM
+      text-align: center
+

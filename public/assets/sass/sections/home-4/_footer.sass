@@ -1,0 +1,28 @@
+.footer-style-4
+  background: url(../media/footer/footer-bg-4.png) no-repeat scroll center bottom transparent
+  @include mediaMD
+    background-size: cover
+
+  .footer-style-1-mobile-apps
+    @include mediaLR
+      border-top: 1px solid #272c58
+      padding-top: 35px
+
+  .footer-style-1-social
+      .nav-item
+        .nav-link
+          &:hover
+            background-color: $sunsetOrangeColor
+
+  .copyright-footer-1
+    @include mediaMD
+      padding-top: 15px
+      border-top: 1px solid #202439
+    @include mediaSM
+      text-align: center
+
+.trial-box-1
+  background-image: -moz-linear-gradient( 134deg, rgb(127,138,253) 0%, rgb(187,146,236) 100%)
+  background-image: -webkit-linear-gradient( 134deg, rgb(127,138,253) 0%, rgb(187,146,236) 100%)
+  background-image: -ms-linear-gradient( 134deg, rgb(127,138,253) 0%, rgb(187,146,236) 100%)
+  box-shadow: inset -0.733px 13.981px 30px 0 rgba(115, 113, 119, 0.35)

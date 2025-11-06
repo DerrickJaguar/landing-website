@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "duukaz-landing",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

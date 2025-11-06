@@ -1,0 +1,97 @@
+@for $i from 1 through 1000
+  .w-#{$i}px
+    width: #{$i}px
+  .h-#{$i}px
+    height: #{$i}px
+  .maw-#{$i}px
+    max-width: #{$i}px
+  .miw-#{$i}px
+    min-width: #{$i}px
+
+@for $i from 0 through 100
+  .w-#{$i}vw
+    width: #{$i}vw
+  .h-#{$i}vh
+    height: #{$i}vh
+  .maw-#{$i}vw
+    max-width: #{$i}vw
+  .mah-#{$i}vh
+    max-height: #{$i}vh
+  .miw-#{$i}vw
+    min-width: #{$i}vw
+  .mih-#{$i}vh
+    min-height: #{$i}vh
+
+@for $i from 0 through 20
+  .w-#{$i * 5}p
+    width: $i * 5%
+  .h-#{$i * 5}p
+    height: $i * 5%
+  .maw-#{$i * 5}p
+    max-width: $i * 5%
+  .mah-#{$i * 5}p
+    max-height: $i * 5%
+  .miw-#{$i * 5}p
+    min-width: $i * 5%
+  .mih-#{$i * 5}p
+    min-height: $i * 5%
+
+@include mediaL
+  @for $i from 0 through 20
+    .w-lg-#{$i * 5}p
+      width: $i * 5%
+    .h-lg-#{$i * 5}p
+      height: $i * 5%
+    .maw-lg-#{$i * 5}p
+      max-width: $i * 5%
+    .mah-lg-#{$i * 5}p
+      max-height: $i * 5%
+    .miw-lg-#{$i * 5}p
+      min-width: $i * 5%
+    .mih-lg-#{$i * 5}p
+      min-height: $i * 5%
+
+@include mediaMD
+  @for $i from 0 through 20
+    .w-md-#{$i * 5}p
+      width: $i * 5%
+    .h-md-#{$i * 5}p
+      height: $i * 5%
+    .maw-md-#{$i * 5}p
+      max-width: $i * 5%
+    .mah-md-#{$i * 5}p
+      max-height: $i * 5%
+    .miw-md-#{$i * 5}p
+      min-width: $i * 5%
+    .mih-md-#{$i * 5}p
+      min-height: $i * 5%
+
+@include mediaSM
+  @for $i from 0 through 20
+    .w-sm-#{$i * 5}p
+      width: $i * 5%
+    .h-sm-#{$i * 5}p
+      height: $i * 5%
+    .maw-sm-#{$i * 5}p
+      max-width: $i * 5%
+    .mah-sm-#{$i * 5}p
+      max-height: $i * 5%
+    .miw-sm-#{$i * 5}p
+      min-width: $i * 5%
+    .mih-sm-#{$i * 5}p
+      min-height: $i * 5%
+
+@include mediaXS
+  @for $i from 0 through 20
+    .w-xs-#{$i * 5}p
+      width: $i * 5%
+    .h-xs-#{$i * 5}p
+      height: $i * 5%
+    .maw-xs-#{$i * 5}p
+      max-width: $i * 5%
+    .mah-xs-#{$i * 5}p
+      max-height: $i * 5%
+    .miw-xs-#{$i * 5}p
+      min-width: $i * 5%
+    .mih-xs-#{$i * 5}p
+      min-height: $i * 5%

@@ -1,0 +1,9 @@
+$lhs: ('1': 1, '1-5': 1.5, '1-33': 1.33, '1-17': 1.17, '1-875': 1.875, '2': 2, '2-5': 2.5, '2-25': 2.25, '2-875': 2.875, '3': 3, '3-125': 3.125)
+
+@each $name, $height in $lhs
+  .lh-#{$name}
+    line-height: $height
+
+@for $i from 10 through 100
+  .lh-#{$i}px
+    line-height: #{$i}px

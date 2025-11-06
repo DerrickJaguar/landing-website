@@ -1,0 +1,68 @@
+BLOG MATERIAL 
+1. Content Creation 
+    ● Media embedding (images, video, audio, infographics)
+    ● Drag-and-drop uploads/attachments 
+    ● SEO tools (meta tags, keywords, slugs)
+    ● Version control & auto-save
+    ● Drafts and private posts 
+    
+2. Content Management 
+    ● Categories, tags, and collections 
+    ● Length of articles e.g. 2min read, 3min read 
+    ● Featured and trending posts
+    ● Archive and search functions 
+    ● Editorial dashboard (status, author, publish date) 
+
+3. Author & Contributor Management
+    ● Multi-author support
+    ● Role-based permissions (editor, author, contributor, admin) 
+    ● Author profiles with bios, images, and social links 
+    ● Guest post submission and approval
+    ● Contributor analytics
+
+4. Audience Engagement 
+    ● Commenting system (native or via Disqus/Facebook/Google) 
+    ● Likes, shares, and reactions 
+    ● Enable sharing of articles to Tiba Health Tech WhatsApp, Linkedin, Facebook page 
+    ● “Related articles” and recommendations 
+
+5. Personalization & Discovery 
+    ● AI-driven content recommendations 
+    ● Trending tags and popular posts 
+    ● Personalized feed by interests or reading history 
+    ● Saved or bookmarked articles 
+
+6. Design & Presentation 
+    ● Responsive and mobile-first layouts 
+    ● Customizable themes and templates
+    ● Featured image and cover photo 
+    ● Dark/light mode 
+    ● Typography and layout controls 
+
+7. SEO & Performance 
+    ● Optimized page speed and caching 
+    ● AMP (Accelerated Mobile Pages) support
+    ● Sitemap and robots.txt generation 
+   ● Schema markup (rich snippets) 
+   ● Canonical URLs and redirects 
+
+8. Monetization & Marketing 
+   ● Affiliate link integration 
+   ● Email marketing automation
+   ● Social media sharing and tracking 
+
+9. Analytics & Insights
+   ● Traffic reports (views, visitors, sessions) 
+   ● Engagement metrics (CTR, time on page, bounce rate)  
+   ● Top content dashboards
+   ● Integration with Google Analytics or internal analytics 
+
+10. Security & Compliance 
+   ● Role-based access control 
+   ● Spam and bot protection 
+   ● HTTPS and SSL enforcement 
+   ● GDPR and cookie consent tools 
+   ● Content moderation tools
+
+
+

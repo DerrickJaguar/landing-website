@@ -1,0 +1,59 @@
+.case-study-grid-item
+  &.ml-0
+    .case-study-link-icon
+      margin-right: -70px
+      right: 0
+    .case-study-content-box
+      left: 0
+    &:hover
+      .case-study-link-icon
+        margin-right: -35px
+        @include mediaMD
+          margin-right: -20px
+      .case-study-content-box
+        left: 20px
+  &.mr-0
+    .case-study-link-icon
+      margin-left: -70px
+      left: 0
+    .case-study-content-box
+      right: 0
+    &:hover
+      .case-study-link-icon
+        margin-left: -35px
+        @include mediaMD
+          margin-left: -20px
+      .case-study-content-box
+        right: 20px
+
+  &:hover
+    .case-study-link-icon, .case-study-content-box
+      opacity: 1
+
+.case-study-link-icon
+  @extend .w-70px
+  @extend .h-70px
+  top: 50%
+  opacity: 0
+  @extend .mt--35px
+  @extend .mt--md-20px
+  @include mediaMD
+    top: 30px
+    width: 40px
+    height: 40px
+
+.case-study-content-box
+  background-color: transparentize(#4871fb, 0.15)
+  opacity: 0
+  @extend .b-30px
+  @extend .maw-325px
+  @extend .transition-default
+  @extend .bdrs-10px
+  @extend .py-25px
+  @extend .py-md-15px
+  @extend .px-35px
+  @extend .px-md-20px
+  @include mediaMD
+    max-width: 250px
+  @include mediaXS
+    max-width: 220px

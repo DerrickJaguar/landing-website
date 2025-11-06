@@ -1,0 +1,40 @@
+.home-banner-1
+  background: url(../media/banners/home-1/bg-1.png) no-repeat center 0 transparent
+  background-size: cover
+
+  p, a:not(.btn)
+    @include mediaSM
+      text-shadow: 0 0 5px $darkBlueColor
+
+.home-banner-1-illustration
+  bottom: 12.3%
+  right: 0
+  max-width: 51vw
+
+.home-about-banner
+  background: url(../media/banners/home-about/bg.png) no-repeat center 0 transparent
+  @include mediaL
+    background-position-y: -195px
+  @include mediaMD
+    background-position-y: -272px
+  @include mediaSM
+    background-position-y: -274px
+  @include mediaXS
+    background-position-y: -276px
+    .container:not(.feature-page-v)
+      max-width: 320px
+
+.home-about-banner-texts
+  @include mediaXL
+    max-width: 650px
+
+    & + img
+      margin-top: -10px
+
+.home-about-banner-feature-img
+  @include mediaL
+    max-width: 40%
+  @include mediaSMR
+    position: absolute
+  @include mediaXS
+    max-width: calc(100% - 30px)

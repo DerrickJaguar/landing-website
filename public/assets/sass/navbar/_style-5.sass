@@ -1,0 +1,78 @@
+.navbar-style-5
+  padding: 28px 0 20px
+  .container
+    @extend .px-md-15px
+
+  .navbar-brand
+    padding: 0
+
+  .navbar-nav-style-2
+    .nav-item
+      .nav-link
+        @include mediaMD
+          text-align: right
+        &::after
+          display: none
+
+  .navbar-style-1-cart, .navbar-style-1-search
+    color: #b9ccd7
+
+  .navbar-collapse
+    @include mediaMD
+      order: 5
+
+  .auth-and-extra-style-1
+    @include mediaMD
+      order: 3
+
+  .navbar-toggler
+    order: 4
+    @extend .ml-20px
+    @extend .bdc-dark-blue-theme
+    @extend .bgcolor-dark-blue-theme
+    @extend .transition-default
+    color: #ffffff !important
+    .navbar-toggler-icon
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    &:focus
+      outline: none
+    &[aria-expanded="true"]
+      @extend .bdc-blue-theme
+      @extend .bgcolor-blue-theme
+
+.navbar-style-5-signup
+  @extend .btn-primary-gradient
+  @extend .px-35px
+  @extend .px-sm-20px
+  @extend .lh-50px
+  @extend .color-white-theme
+  @extend .hover-color-white-theme
+  @extend .hover-text-dec-none
+  @extend .font-rubik
+  @extend .fz-16
+  @extend .bdrs-5px
+  @extend .transition-default
+  border: none
+  display: inline-flex
+  @include mediaSM
+    line-height: 40px
+
+.navbar-style-5-signup-2
+  @extend .bgcolor-white-theme
+  @extend .hover-bgcolor-green-theme
+  @extend .px-35px
+  @extend .px-sm-20px
+  @extend .lh-48px
+  @extend .color-green-theme
+  @extend .hover-color-white-theme
+  @extend .hover-text-dec-none
+  @extend .font-rubik
+  @extend .fz-16
+  @extend .bdrs-5px
+  @extend .transition-default
+  border: 1px solid #dce7fa
+  display: inline-flex
+  @include mediaSM
+    line-height: 40px
+  &:hover
+    border-color: $greenColor

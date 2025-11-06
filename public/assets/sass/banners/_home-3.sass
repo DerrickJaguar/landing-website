@@ -1,0 +1,29 @@
+.home-banner-3
+  background: url(../media/banners/home-3/banner-ai.png) no-repeat center bottom transparent
+  background-size: cover
+  @extend .pt-155px
+  @extend .pb-85px
+  @extend .pt-lg-120px
+  @include mediaXL
+    height: 100vh
+    max-height: 850px
+
+.banner-ai-3
+  @include mediaSM
+    max-width: 270px
+
+.home-3-banner-divider
+  border-top-color: #d8deeb
+
+.home-banner-3-logo-carousel
+  margin-left: 20px
+  margin-right: 20px
+  .slick-track
+    display: flex
+    align-items: center
+  .slick-slide
+    padding: 0 20px
+  .slick-next, .slick-prev
+    &::before
+      font-family: inherit
+      color: #bfc0e9

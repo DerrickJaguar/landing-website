@@ -1,0 +1,37 @@
+.application-performance-1
+  box-shadow: 0 0 41px 0 rgba(226, 220, 237, 0.35)
+  background-color: #ffffff
+
+.application-performance-1-title
+  & + p
+    margin-bottom: 15px
+
+.performance-list-items-dot
+  top: 4px
+  left: 4px
+  width: 18px
+  height: 18px
+  transform: rotate(45deg)
+
+.software-performance-1-lit-boxes
+  @media (max-width: 479px)
+    justify-content: center
+
+.software-performance-1-lit-box
+  width: 120px
+  height: 120px
+  border-radius: 10px
+  background: no-repeat scroll center center transparent
+  display: inline-flex
+  //margin-right: 20px
+  line-height: 1
+  .font-rubik
+    margin-bottom: 8px
+  &:last-of-type
+    margin-right: 0
+  &.software-performance-1-lit-box-1
+    background-image: url(../media/performance/lit-box-1.png)
+  &.software-performance-1-lit-box-2
+    background-image: url(../media/performance/lit-box-2.png)
+  &.software-performance-1-lit-box-3
+    background-image: url(../media/performance/lit-box-3.png)

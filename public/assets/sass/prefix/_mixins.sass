@@ -1,0 +1,49 @@
+@mixin placeholder
+  &.placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+
+@mixin mediaXXL
+  @media (min-width: 1600px)
+    @content
+
+@mixin mediaXL
+  @media (min-width: 1200px)
+    @content
+
+@mixin mediaL
+  @media (max-width: 1199px)
+    @content
+
+@mixin mediaLR
+  @media (min-width: 992px)
+    @content
+
+@mixin mediaMD
+  @media (max-width: 991px)
+    @content
+
+@mixin mediaMDR
+  @media (min-width: 768px)
+    @content
+
+@mixin mediaSM
+  @media (max-width: 767px)
+    @content
+
+@mixin mediaSMR
+  @media (min-width: 576px)
+    @content
+
+@mixin mediaXS
+  @media (max-width: 575px)
+    @content
+
+@mixin mediaXSR
+  @media (min-width: 320px)
+    @content
