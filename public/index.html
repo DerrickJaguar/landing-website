@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -194,7 +194,9 @@
         opacity: 0.55; /* tweakable: how much the color overlays the image */
         pointer-events: none;
         z-index: 1;
-        transition: background-color 220ms ease, opacity 220ms ease;
+        transition:
+          background-color 220ms ease,
+          opacity 220ms ease;
       }
       /* Ensure banner content sits above the overlay */
       .home-banner-4 > .container {
@@ -220,7 +222,9 @@
         color: var(--nav-link) !important;
         border: 1px solid rgba(255, 255, 255, 0.12);
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-        transition: transform 160ms ease, box-shadow 160ms ease,
+        transition:
+          transform 160ms ease,
+          box-shadow 160ms ease,
           background-color 160ms ease;
       }
       #theme-cta:focus,
@@ -275,7 +279,9 @@
       /* Make primary CTAs more visible (slightly stronger shadow and subtle scale on hover) */
       .btn-primary {
         box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
-        transition: transform 120ms ease, box-shadow 120ms ease;
+        transition:
+          transform 120ms ease,
+          box-shadow 120ms ease;
       }
       .btn-primary:hover,
       .btn-primary:focus {
@@ -311,7 +317,9 @@
         border-radius: 12px;
         box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
         border: 6px solid rgba(255, 255, 255, 0.9);
-        transition: transform 220ms ease, box-shadow 220ms ease;
+        transition:
+          transform 220ms ease,
+          box-shadow 220ms ease;
       }
 
       /* Larger screens: maintain size and position */
@@ -645,8 +653,14 @@
                 transition: all 0.3s ease !important;
                 margin-right: 12px !important;
               "
-              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(79, 70, 229, 0.4)';"
-              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(79, 70, 229, 0.3)';"
+              onmouseover="
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 6px 16px rgba(79, 70, 229, 0.4)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 4px 12px rgba(79, 70, 229, 0.3)';
+              "
             >
               Get Started <i class="fas fa-arrow-right ml-2"></i>
             </a>
@@ -673,8 +687,14 @@
                 box-shadow: none !important;
                 transition: all 0.3s ease !important;
               "
-              onmouseover="this.style.background='#4F46E5'; this.style.color='white';"
-              onmouseout="this.style.background='transparent'; this.style.color='#4F46E5';"
+              onmouseover="
+                this.style.background = '#4F46E5';
+                this.style.color = 'white';
+              "
+              onmouseout="
+                this.style.background = 'transparent';
+                this.style.color = '#4F46E5';
+              "
             >
               Book A Demo <i class="fas fa-arrow-right ml-2"></i>
             </a>
@@ -924,977 +944,1208 @@
     </section>
 
     <!-- Pricing & Feature Comparison -->
-    <section class="row mx-0 bg-light py-5 mb-70px">
-      <div class="container">
-        <h2
-          class="font-cabin fw-700 fz-40 fz-md-30 text-center color-dark-theme mb-4"
-        >
-          Choose Your Perfect Plan
-        </h2>
-        <p class="text-center color-dark-blue-theme-80 font-rubik fz-18 mb-5">
-          Affordable cloud ERP for every business. Works anywhere, on any
-          device. Try it free—no payment required.
-        </p>
+    <div style="display: none">
+      <!-- PRICING SECTION HIDDEN - remove this div to restore -->
+      <section class="row mx-0 bg-light py-5 mb-70px">
+        <div class="container">
+          <h2
+            class="font-cabin fw-700 fz-40 fz-md-30 text-center color-dark-theme mb-4"
+          >
+            Choose Your Perfect Plan
+          </h2>
+          <p class="text-center color-dark-blue-theme-80 font-rubik fz-18 mb-5">
+            Affordable cloud ERP for every business. Works anywhere, on any
+            device. Try it free—no payment required.
+          </p>
 
-        <!-- Tabs for different business types -->
-        <ul
-          class="nav nav-pills mb-3 justify-content-center flex-wrap"
-          id="businessTypeTab"
-          role="tablist"
-        >
-          <li class="nav-item">
-            <a
-              class="nav-link active d-flex align-items-center"
-              data-toggle="pill"
-              href="#retail"
-            >
-              <img
-                src="./assets/media/icons/service-2.png"
-                class="mr-2 rounded"
-                alt="Shop icon"
-              />
-              Shops & Supermarkets
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link d-flex align-items-center"
-              data-toggle="pill"
-              href="#restaurants"
-            >
-              <img
-                src="./assets/media/icons/service-1.png"
-                class="mr-2 rounded"
-                alt="Restaurant icon"
-              />
-              Restaurants & Cafés
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link d-flex align-items-center"
-              data-toggle="pill"
-              href="#salons"
-            >
-              <img
-                src="./assets/media/icons/human-resources.png"
-                class="mr-2 rounded"
-                alt="Salon icon"
-              />
-              Salons & Services
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link d-flex align-items-center"
-              data-toggle="pill"
-              href="#law"
-            >
-              <img
-                src="./assets/media/icons/creative.png"
-                class="mr-2 rounded"
-                alt="Law icon"
-              />
-              Law & Accounting
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link d-flex align-items-center"
-              data-toggle="pill"
-              href="#property"
-            >
-              <img
-                src="./assets/media/icons/service-1.png"
-                class="mr-2 rounded"
-                alt="Property icon"
-              />
-              Property Management
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link d-flex align-items-center"
-              data-toggle="pill"
-              href="#school"
-            >
-              <img
-                src="./assets/media/icons/service-3.png"
-                class="mr-2 rounded"
-                alt="School icon"
-              />
-              School Management
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link d-flex align-items-center"
-              data-toggle="pill"
-              href="#farm"
-            >
-              <img
-                src="./assets/media/icons/service-4.png"
-                class="mr-2 rounded"
-                alt="Farm icon"
-              />
-              Farm Management
-            </a>
-          </li>
-        </ul>
-        <div class="tab-content">
-          <!-- Retail Tab -->
-          <div class="tab-pane fade show active" id="retail">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body p-4">
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Standard Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
-                      <span class="font-cabin fw-700 fz-40">180,000</span>
-                      <span class="text-muted">UGX/yr</span>
-                    </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> POS
-                        checkout
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Sales &
-                        profit tracking
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Inventory
-                        with expiry alerts
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Discounts
-                        & loyalty tools
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Employee
-                        management
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Instant
-                        Messaging
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+          <!-- Tabs for different business types -->
+          <ul
+            class="nav nav-pills mb-3 justify-content-center flex-wrap"
+            id="businessTypeTab"
+            role="tablist"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active d-flex align-items-center"
+                data-toggle="pill"
+                href="#retail"
+              >
+                <img
+                  src="./assets/media/icons/service-2.png"
+                  class="mr-2 rounded"
+                  alt="Retail Shops icon"
+                />
+                Retail Shops
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#wholesale"
+              >
+                <img
+                  src="./assets/media/icons/service-2.png"
+                  class="mr-2 rounded"
+                  alt="Wholesale Shops icon"
+                />
+                Wholesale Shops
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#supermarkets"
+              >
+                <img
+                  src="./assets/media/icons/service-2.png"
+                  class="mr-2 rounded"
+                  alt="Supermarkets icon"
+                />
+                Supermarkets
+              </a>
+            </li>
+            <!-- Other business type tabs hidden for now
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#restaurants"
+              >
+                <img
+                  src="./assets/media/icons/service-1.png"
+                  class="mr-2 rounded"
+                  alt="Restaurant icon"
+                />
+                Restaurants & Cafés
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#salons"
+              >
+                <img
+                  src="./assets/media/icons/human-resources.png"
+                  class="mr-2 rounded"
+                  alt="Salon icon"
+                />
+                Salons & Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#law"
+              >
+                <img
+                  src="./assets/media/icons/creative.png"
+                  class="mr-2 rounded"
+                  alt="Law icon"
+                />
+                Law & Accounting
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#property"
+              >
+                <img
+                  src="./assets/media/icons/service-1.png"
+                  class="mr-2 rounded"
+                  alt="Property icon"
+                />
+                Property Management
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#school"
+              >
+                <img
+                  src="./assets/media/icons/service-3.png"
+                  class="mr-2 rounded"
+                  alt="School icon"
+                />
+                School Management
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center"
+                data-toggle="pill"
+                href="#farm"
+              >
+                <img
+                  src="./assets/media/icons/service-4.png"
+                  class="mr-2 rounded"
+                  alt="Farm icon"
+                />
+                Farm Management
+              </a>
+            </li>
+            -->
+          </ul>
+          <div class="tab-content">
+            <!-- Retail Shops Tab -->
+            <div class="tab-pane fade show active" id="retail">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Features
+                      </h3>
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> POS
+                          checkout
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Sales &
+                          profit tracking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Inventory with expiry alerts
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Discounts & loyalty tools
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Employee management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary px-4"
+                          >Try Now</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border-0 shadow-lg"
-                  style="transform: scale(1.05)"
-                >
-                  <div class="card-body p-4">
-                    <div
-                      class="ribbon position-absolute"
-                      style="
-                        top: 20px;
-                        right: -5px;
-                        background: #ff6b6b;
-                        color: white;
-                        padding: 5px 20px;
-                      "
-                    >
-                      Premium
-                    </div>
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Premium Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
-                      <span class="font-cabin fw-700 fz-40">300,000</span>
-                      <span class="text-muted">UGX/yr</span>
-                    </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> All
-                        Standard Features
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Advanced
-                        Analytics
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i>
-                        Multi-branch Support
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Enhanced
-                        Reporting
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Priority
-                        Support
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-star text-warning mr-2"></i> Premium
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
                         Features
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      </h3>
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Advanced Analytics
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Multi-branch Support
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Enhanced Reporting
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Priority Support
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary px-4"
+                          >Try Now</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Restaurants Tab -->
-          <div class="tab-pane fade" id="restaurants">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body p-4">
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Standard Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
-                      <span class="font-cabin fw-700 fz-40">180,000</span>
-                      <span class="text-muted">UGX/yr</span>
-                    </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Fast
-                        order processing & menu control
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Table
-                        reservations
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Kitchen
-                        stock alerts
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Staff
-                        scheduling
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Loyalty
-                        programs
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Instant
-                        Messaging
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+            <!-- Wholesale Shops Tab -->
+            <div class="tab-pane fade" id="wholesale">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Features
+                      </h3>
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> POS
+                          checkout
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Bulk
+                          pricing & volume discounts
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Inventory & stock management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Supplier management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Employee management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary px-4"
+                          >Try Now</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border-0 shadow-lg"
-                  style="transform: scale(1.05)"
-                >
-                  <div class="card-body p-4">
-                    <div
-                      class="ribbon position-absolute"
-                      style="
-                        top: 20px;
-                        right: -5px;
-                        background: #ff6b6b;
-                        color: white;
-                        padding: 5px 20px;
-                      "
-                    >
-                      Premium
-                    </div>
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Premium Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
-                      <span class="font-cabin fw-700 fz-40">300,000</span>
-                      <span class="text-muted">UGX/yr</span>
-                    </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> All
-                        Standard Features
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Advanced
-                        Analytics
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i>
-                        Multi-branch Support
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-star text-warning mr-2"></i> Premium
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
                         Features
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      </h3>
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Advanced Sales Analytics
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Multi-branch Support
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Customer credit management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Priority Support
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary px-4"
+                          >Try Now</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Salons Tab -->
-          <div class="tab-pane fade" id="salons">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body p-4">
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Standard Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+            <!-- Supermarkets Tab -->
+            <div class="tab-pane fade" id="supermarkets">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Features
+                      </h3>
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> POS
+                          checkout
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Barcode
+                          scanning & printing
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Inventory with expiry alerts
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Loyalty
+                          & promotions
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Employee management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary px-4"
+                          >Try Now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Features
+                      </h3>
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Advanced Analytics & Reports
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Multi-branch Support
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Supplier & procurement tools
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Priority Support
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary px-4"
+                          >Try Now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Restaurants Tab -->
+            <div class="tab-pane fade" id="restaurants">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Standard Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
+                      <span class="font-cabin fw-700 fz-40">180,000</span>
+                      <span class="text-muted">UGX/yr</span>
+                    </div> -->
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Fast
+                          order processing & menu control
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Table
+                          reservations
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Kitchen
+                          stock alerts
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Staff
+                          scheduling
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Loyalty
+                          programs
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Premium Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
+                      <span class="font-cabin fw-700 fz-40">300,000</span>
+                      <span class="text-muted">UGX/yr</span>
+                    </div> -->
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Advanced Analytics
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Multi-branch Support
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Salons Tab -->
+            <div class="tab-pane fade" id="salons">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Standard Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">120,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i>
-                        Appointment booking
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Client
-                        history tracking
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Stock
-                        management
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Sales &
-                        commissions reports
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Loyalty
-                        discounts
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Instant
-                        Messaging
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Appointment booking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Client
+                          history tracking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Stock
+                          management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Sales &
+                          commissions reports
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Loyalty
+                          discounts
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border-0 shadow-lg"
-                  style="transform: scale(1.05)"
-                >
-                  <div class="card-body p-4">
-                    <div
-                      class="ribbon position-absolute"
-                      style="
-                        top: 20px;
-                        right: -5px;
-                        background: #ff6b6b;
-                        color: white;
-                        padding: 5px 20px;
-                      "
-                    >
-                      Premium
-                    </div>
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Premium Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Premium Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">150,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> All
-                        Standard Features
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> SMS
-                        Reminders
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Advanced
-                        Analytics
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-star text-warning mr-2"></i> Premium
-                        Features
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> SMS
+                          Reminders
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Advanced Analytics
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Law & Accounting Tab -->
-          <div class="tab-pane fade" id="law">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body p-4">
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Standard Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+            <!-- Law & Accounting Tab -->
+            <div class="tab-pane fade" id="law">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Standard Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">400,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Client &
-                        case management
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Billing &
-                        invoicing
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Financial
-                        reports
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Staff
-                        workload tracking
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Instant
-                        Messaging
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Client
+                          & case management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Billing
+                          & invoicing
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Financial reports
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Staff
+                          workload tracking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border-0 shadow-lg"
-                  style="transform: scale(1.05)"
-                >
-                  <div class="card-body p-4">
-                    <div
-                      class="ribbon position-absolute"
-                      style="
-                        top: 20px;
-                        right: -5px;
-                        background: #ff6b6b;
-                        color: white;
-                        padding: 5px 20px;
-                      "
-                    >
-                      Premium
-                    </div>
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Premium Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Premium Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">500,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> All
-                        Standard Features
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Secure
-                        Document Storage
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i>
-                        Compliance Reporting
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-star text-warning mr-2"></i> Premium
-                        Features
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Secure
+                          Document Storage
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Compliance Reporting
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Property Management Tab -->
-          <div class="tab-pane fade" id="property">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body p-4">
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Standard Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+            <!-- Property Management Tab -->
+            <div class="tab-pane fade" id="property">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Standard Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">120,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Tenant &
-                        rent tracking
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i>
-                        Maintenance requests
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Cashflow
-                        reports
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Contract
-                        reminders
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Instant
-                        Messaging
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a href="#" class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Tenant
+                          & rent tracking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Maintenance requests
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Cashflow reports
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Contract reminders
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a href="#" class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border-0 shadow-lg"
-                  style="transform: scale(1.05)"
-                >
-                  <div class="card-body p-4">
-                    <div
-                      class="ribbon position-absolute"
-                      style="
-                        top: 20px;
-                        right: -5px;
-                        background: #ff6b6b;
-                        color: white;
-                        padding: 5px 20px;
-                      "
-                    >
-                      Premium
-                    </div>
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Premium Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Premium Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">150,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> All
-                        Standard Features
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Analytics
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> SMS
-                        Alerts
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-star text-warning mr-2"></i> Premium
-                        Features
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Analytics
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> SMS
+                          Alerts
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- School Management Tab -->
-          <div class="tab-pane fade" id="school">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body p-4">
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Standard Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+            <!-- School Management Tab -->
+            <div class="tab-pane fade" id="school">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Standard Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">200,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Grading &
-                        assignment tracking
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Student
-                        progress & attendance
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Fee
-                        collection + POS
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i>
-                        Enrollment management
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Instant
-                        Messaging
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Grading
+                          & assignment tracking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Student
+                          progress & attendance
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Fee
+                          collection + POS
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Enrollment management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border-0 shadow-lg"
-                  style="transform: scale(1.05)"
-                >
-                  <div class="card-body p-4">
-                    <div
-                      class="ribbon position-absolute"
-                      style="
-                        top: 20px;
-                        right: -5px;
-                        background: #ff6b6b;
-                        color: white;
-                        padding: 5px 20px;
-                      "
-                    >
-                      Premium
-                    </div>
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Premium Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Premium Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">300,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> All
-                        Standard Features
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Financial
-                        Analytics
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Parent
-                        Portals
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-star text-warning mr-2"></i> Premium
-                        Features
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Financial Analytics
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Parent
+                          Portals
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Farm Management Tab -->
-          <div class="tab-pane fade" id="farm">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body p-4">
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Standard Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+            <!-- Farm Management Tab -->
+            <div class="tab-pane fade" id="farm">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Standard Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">120,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Employee
-                        management
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Input &
-                        output tracking
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Farm
-                        inventory
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Market
-                        price reports
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i>
-                        Farmer–extension officer matching
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Instant
-                        Messaging
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Employee management
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Input &
+                          output tracking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Farm
+                          inventory
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Market
+                          price reports
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Farmer–extension officer matching
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> Instant
+                          Messaging
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border-0 shadow-lg"
-                  style="transform: scale(1.05)"
-                >
-                  <div class="card-body p-4">
-                    <div
-                      class="ribbon position-absolute"
-                      style="
-                        top: 20px;
-                        right: -5px;
-                        background: #ff6b6b;
-                        color: white;
-                        padding: 5px 20px;
-                      "
-                    >
-                      Premium
-                    </div>
-                    <h3 class="font-cabin fw-700 text-center mb-3">
-                      Premium Plan
-                    </h3>
-                    <!-- <div class="text-center mb-4">
+                <div class="col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-lg"
+                    style="transform: scale(1.05)"
+                  >
+                    <div class="card-body p-4">
+                      <div
+                        class="ribbon position-absolute"
+                        style="
+                          top: 20px;
+                          right: -5px;
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 5px 20px;
+                        "
+                      >
+                        Premium
+                      </div>
+                      <h3 class="font-cabin fw-700 text-center mb-3">
+                        Premium Plan
+                      </h3>
+                      <!-- <div class="text-center mb-4">
                       <span class="font-cabin fw-700 fz-40">250,000</span>
                       <span class="text-muted">UGX/yr</span>
                     </div> -->
-                    <ul class="list-unstyled mb-4">
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> All
-                        Standard Features
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> Financial
-                        Analytics
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check text-success mr-2"></i> POS
-                        Integration
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-star text-warning mr-2"></i> Premium
-                        Features
-                      </li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="#" class="btn btn-outline-primary flex-grow-1"
-                        >Book Free Demo</a
-                      >
-                      <a
-                        href="https://app.duukaz.com/"
-                        class="btn btn-primary flex-grow-1"
-                        >Start Free Trial</a
-                      >
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> All
+                          Standard Features
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i>
+                          Financial Analytics
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-success mr-2"></i> POS
+                          Integration
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-star text-warning mr-2"></i> Premium
+                          Features
+                        </li>
+                      </ul>
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary flex-grow-1"
+                          >Book Free Demo</a
+                        >
+                        <a
+                          href="https://app.duukaz.com/"
+                          class="btn btn-primary flex-grow-1"
+                          >Start Free Trial</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Why Choose Duukaz -->
+          <!-- Why Choose Duukaz -->
 
-        <div class="mt-5 text-center">
-          <h2 class="font-cabin fw-700 mb-6">Why Choose Duukaz ERP?</h2>
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <ul
-                class="list-unstyled"
-                style="display: inline-block; text-align: left !important"
-              >
-                <li
-                  class="mb-3"
-                  style="display: flex; align-items: flex-start; gap: 10px"
+          <div class="mt-5 text-center">
+            <h2 class="font-cabin fw-700 mb-6">Why Choose Duukaz ERP?</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <ul
+                  class="list-unstyled"
+                  style="display: inline-block; text-align: left !important"
                 >
-                  <i
-                    class="fas fa-check-circle text-success"
-                    style="margin-top: 3px; flex-shrink: 0"
-                  ></i>
-                  <span>Affordable annual pricing</span>
-                </li>
-                <li
-                  class="mb-3"
-                  style="display: flex; align-items: flex-start; gap: 10px"
-                >
-                  <i
-                    class="fas fa-check-circle text-success"
-                    style="margin-top: 3px; flex-shrink: 0"
-                  ></i>
-                  <span>Cloud-based & easy to use</span>
-                </li>
-                <li
-                  class="mb-3"
-                  style="display: flex; align-items: flex-start; gap: 10px"
-                >
-                  <i
-                    class="fas fa-check-circle text-success"
-                    style="margin-top: 3px; flex-shrink: 0"
-                  ></i>
-                  <span
-                    >Works on all devices: phones, tablets, laptops &
-                    desktops</span
+                  <li
+                    class="mb-3"
+                    style="display: flex; align-items: flex-start; gap: 10px"
                   >
-                </li>
-                <li
-                  class="mb-3"
-                  style="display: flex; align-items: flex-start; gap: 10px"
-                >
-                  <i
-                    class="fas fa-check-circle text-success"
-                    style="margin-top: 3px; flex-shrink: 0"
-                  ></i>
-                  <span
-                    >Covers sales, finance, staff, stock, and clients in one
-                    place</span
+                    <i
+                      class="fas fa-check-circle text-success"
+                      style="margin-top: 3px; flex-shrink: 0"
+                    ></i>
+                    <span>Affordable annual pricing</span>
+                  </li>
+                  <li
+                    class="mb-3"
+                    style="display: flex; align-items: flex-start; gap: 10px"
                   >
-                </li>
-                <li
-                  class="mb-3"
-                  style="display: flex; align-items: flex-start; gap: 10px"
-                >
-                  <i
-                    class="fas fa-check-circle text-success"
-                    style="margin-top: 3px; flex-shrink: 0"
-                  ></i>
-                  <span>Advanced analytics for smarter decisions</span>
-                </li>
-                <li
-                  class="mb-3"
-                  style="display: flex; align-items: flex-start; gap: 10px"
-                >
-                  <i
-                    class="fas fa-check-circle text-success"
-                    style="margin-top: 3px; flex-shrink: 0"
-                  ></i>
-                  <span>Free trial — no cash or MoMo needed</span>
-                </li>
-              </ul>
+                    <i
+                      class="fas fa-check-circle text-success"
+                      style="margin-top: 3px; flex-shrink: 0"
+                    ></i>
+                    <span>Cloud-based & easy to use</span>
+                  </li>
+                  <li
+                    class="mb-3"
+                    style="display: flex; align-items: flex-start; gap: 10px"
+                  >
+                    <i
+                      class="fas fa-check-circle text-success"
+                      style="margin-top: 3px; flex-shrink: 0"
+                    ></i>
+                    <span
+                      >Works on all devices: phones, tablets, laptops &
+                      desktops</span
+                    >
+                  </li>
+                  <li
+                    class="mb-3"
+                    style="display: flex; align-items: flex-start; gap: 10px"
+                  >
+                    <i
+                      class="fas fa-check-circle text-success"
+                      style="margin-top: 3px; flex-shrink: 0"
+                    ></i>
+                    <span
+                      >Covers sales, finance, staff, stock, and clients in one
+                      place</span
+                    >
+                  </li>
+                  <li
+                    class="mb-3"
+                    style="display: flex; align-items: flex-start; gap: 10px"
+                  >
+                    <i
+                      class="fas fa-check-circle text-success"
+                      style="margin-top: 3px; flex-shrink: 0"
+                    ></i>
+                    <span>Advanced analytics for smarter decisions</span>
+                  </li>
+                  <li
+                    class="mb-3"
+                    style="display: flex; align-items: flex-start; gap: 10px"
+                  >
+                    <i
+                      class="fas fa-check-circle text-success"
+                      style="margin-top: 3px; flex-shrink: 0"
+                    ></i>
+                    <span>Free trial — no cash or MoMo needed</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <!-- END PRICING SECTION HIDDEN -->
 
     <section class="row mx-0 section-white-shadow mb-70px">
       <div class="container mb--70px">
@@ -2171,28 +2422,40 @@
           <div class="mt-3">
             <a
               href="#"
-              onclick="shareOnWhatsApp(); return false;"
+              onclick="
+                shareOnWhatsApp();
+                return false;
+              "
               class="btn btn-success btn-sm mx-1"
             >
               <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
             <a
               href="#"
-              onclick="shareOnFacebook(); return false;"
+              onclick="
+                shareOnFacebook();
+                return false;
+              "
               class="btn btn-primary btn-sm mx-1"
             >
               <i class="fab fa-facebook"></i> Facebook
             </a>
             <a
               href="#"
-              onclick="shareOnTwitter(); return false;"
+              onclick="
+                shareOnTwitter();
+                return false;
+              "
               class="btn btn-info btn-sm mx-1"
             >
               <i class="fab fa-twitter"></i> Twitter
             </a>
             <a
               href="#"
-              onclick="copyLink(); return false;"
+              onclick="
+                copyLink();
+                return false;
+              "
               class="btn btn-secondary btn-sm mx-1"
             >
               <i class="fas fa-copy"></i> Copy Link
@@ -2759,7 +3022,7 @@
         window.open(
           `https://www.facebook.com/sharer/sharer.php?u=${url}`,
           "_blank",
-          "width=600,height=400"
+          "width=600,height=400",
         );
       }
 
@@ -2770,7 +3033,7 @@
         window.open(
           `https://twitter.com/intent/tweet?text=${text}&url=${url}`,
           "_blank",
-          "width=600,height=400"
+          "width=600,height=400",
         );
       }
 
