@@ -382,6 +382,140 @@
           border-radius: 8px;
         }
       }
+
+      /* Business type tab icons — orange background */
+      #businessTypeTab .nav-link img {
+        background: linear-gradient(135deg, #ff7a00, #ffb347);
+        border-radius: 50%;
+        padding: 6px;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
+
+      /* Features check icons — orange */
+      .tab-content .fa-check {
+        color: #ff7a00 !important;
+      }
+
+      /* Success stories cards — premium rounded finish */
+      .testimonials-slider .card {
+        border-radius: 22px !important;
+        border: 1px solid rgba(255, 122, 0, 0.12) !important;
+        background: linear-gradient(180deg, #ffffff 0%, #fff7ef 100%);
+        box-shadow:
+          0 14px 30px rgba(17, 24, 39, 0.08),
+          0 4px 10px rgba(255, 122, 0, 0.14);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .testimonials-slider .card:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 20px 40px rgba(17, 24, 39, 0.12),
+          0 8px 20px rgba(255, 122, 0, 0.2);
+      }
+
+      .testimonials-slider .card-body {
+        padding: 2rem !important;
+      }
+
+      .testimonials-slider .rounded-circle {
+        border: 3px solid rgba(255, 122, 0, 0.28);
+        box-shadow: 0 8px 18px rgba(255, 122, 0, 0.2);
+      }
+
+      .success-stories-section {
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 179, 71, 0.32),
+            rgba(255, 179, 71, 0) 42%
+          ),
+          radial-gradient(
+            circle at bottom left,
+            rgba(255, 122, 0, 0.2),
+            rgba(255, 122, 0, 0) 48%
+          ),
+          linear-gradient(180deg, #fff8f1 0%, #fff3e4 100%);
+        border-top: 1px solid rgba(255, 122, 0, 0.14);
+        border-bottom: 1px solid rgba(255, 122, 0, 0.14);
+      }
+
+      /* Global typography consistency */
+      body,
+      p,
+      li,
+      a,
+      span,
+      small,
+      input,
+      button,
+      label,
+      textarea {
+        font-family: "Cabin", sans-serif !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Cabin", sans-serif !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-size: 2.4rem !important;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-size: 1.6rem !important;
+      }
+
+      p,
+      li,
+      small,
+      a,
+      input,
+      button,
+      label,
+      textarea {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+      }
+
+      @media (max-width: 767.98px) {
+        h1,
+        h2,
+        h3 {
+          font-size: 2rem !important;
+        }
+
+        h4,
+        h5,
+        h6 {
+          font-size: 1.35rem !important;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .testimonials-slider .card {
+          border-radius: 16px !important;
+        }
+
+        .testimonials-slider .card-body {
+          padding: 1.25rem !important;
+        }
+      }
     </style>
 
     <title>Duukaz</title>
@@ -507,7 +641,13 @@
 
           <a
             href="https://app.duukaz.com"
-            class="sign-in-link text-decoration-none"
+            class="btn btn-get-started sign-in-link"
+            style="
+              margin: 0 !important;
+              padding: 0.5rem 1rem !important;
+              margin-right: 8px !important;
+              color: white !important;
+            "
           >
             Sign in
           </a>
@@ -540,8 +680,15 @@
         >
           <div class="col-md-6" style="padding-top: 0 !important">
             <h2
-              class="home-banner-4-title text-white"
-              style="margin-top: 0 !important; padding-top: 0 !important"
+              class="home-banner-4-title"
+              style="
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+                background: linear-gradient(135deg, #ff7a00, #ffb347);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+              "
             >
               Smarter Business, Zero Hassle
             </h2>
@@ -656,8 +803,8 @@
               style="
                 background: linear-gradient(
                   135deg,
-                  #080808 0%,
-                  #0b0b0e 100%
+                  #ff7a00 0%,
+                  #ffb347 100%
                 ) !important;
                 color: white !important;
                 padding: 12px 28px !important;
@@ -669,17 +816,9 @@
                 align-items: center !important;
                 gap: 8px !important;
                 border: none !important;
-                box-shadow: 0 4px 12px rgba(12, 12, 12, 0.3) !important;
+                box-shadow: 0 4px 15px rgba(255, 122, 0, 0.3) !important;
                 transition: all 0.3s ease !important;
                 margin-right: 12px !important;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-2px)';
-                this.style.boxShadow = '0 6px 16px rgba(79, 70, 229, 0.4)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = '0 4px 12px rgba(79, 70, 229, 0.3)';
               "
             >
               Get Started <i class="fas fa-arrow-right ml-2"></i>
@@ -691,10 +830,10 @@
               style="
                 background: linear-gradient(
                   135deg,
-                  #080808 0%,
-                  #0b0b0e 100%
+                  #ff7a00 0%,
+                  #ffb347 100%
                 ) !important;
-                color: #e1e1ee !important;
+                color: white !important;
                 padding: 12px 28px !important;
                 border-radius: 50px !important;
                 font-weight: 500 !important;
@@ -703,17 +842,9 @@
                 display: inline-flex !important;
                 align-items: center !important;
                 gap: 8px !important;
-                border: 2px solid #0c0c0e !important;
-                box-shadow: none !important;
+                border: none !important;
+                box-shadow: 0 4px 15px rgba(255, 122, 0, 0.3) !important;
                 transition: all 0.3s ease !important;
-              "
-              onmouseover="
-                this.style.background = '#4F46E5';
-                this.style.color = 'white';
-              "
-              onmouseout="
-                this.style.background = 'transparent';
-                this.style.color = '#4F46E5';
               "
             >
               Book A Demo <i class="fas fa-arrow-right ml-2"></i>
@@ -826,7 +957,12 @@
             </p>
             <a
               href="#"
-              class="bdrs-10px d-inline-block try-it-free-btn-purple hover-text-dec-none pt-25px lh-1-5 pb-20px px-35px hover-bgcolor-dark-blue-theme transition-default text-white fz-14 font-rubik"
+              class="bdrs-10px d-inline-block hover-text-dec-none pt-25px lh-1-5 pb-20px px-35px transition-default fz-14 font-rubik"
+              style="
+                background: linear-gradient(135deg, #ff7a00, #ffb347);
+                color: #fff;
+                font-weight: 600;
+              "
             >
               Make payment your own
               <span class="d-block fz-20">Try it free</span>
@@ -2011,7 +2147,9 @@
                 >
                   <div
                     class="work-process-1-payment-check rounded-circle text-white position-absolute d-inline-flex justify-content-center align-items-center bdrs-10px"
-                    style="background-color: #9fafff"
+                    style="
+                      background: linear-gradient(135deg, #ff7a00, #ffb347);
+                    "
                   >
                     <i class="fas fa-check fz-14" aria-hidden="true"></i>
                   </div>
@@ -2046,7 +2184,9 @@
                 >
                   <div
                     class="work-process-1-payment-check rounded-circle text-white position-absolute d-inline-flex justify-content-center align-items-center bdrs-10px"
-                    style="background-color: #9fafff"
+                    style="
+                      background: linear-gradient(135deg, #ff7a00, #ffb347);
+                    "
                   >
                     <i class="fas fa-check fz-14" aria-hidden="true"></i>
                   </div>
@@ -2107,7 +2247,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="row mx-0 pt-100px pb-60px bg-light">
+    <section class="row mx-0 pt-100px pb-60px success-stories-section">
       <div class="container">
         <h2
           class="maw-850px fz-40 fz-md-30 font-cabin lh-1-17 fw-700 color-dark-black-theme text-center mx-auto mb-20px"
@@ -2324,7 +2464,16 @@
                   placeholder="Enter your email address"
                   aria-label="Email address"
                 />
-                <button class="btn btn-dark px-4" type="submit">
+                <button
+                  class="btn px-4"
+                  type="submit"
+                  style="
+                    background: linear-gradient(135deg, #ff7a00, #ffb347);
+                    color: #fff;
+                    font-weight: 700;
+                    border: none;
+                  "
+                >
                   Subscribe
                 </button>
               </div>
@@ -2398,7 +2547,10 @@
       </div>
     </section>
 
-    <footer class="row mx-0 footer-style-4 pb-25px pt-30px">
+    <footer
+      class="row mx-0 footer-style-4 pb-25px pt-30px"
+      style="background: linear-gradient(135deg, #ff7a00, #ffb347) !important"
+    >
       <div class="container">
         <div
           class="row mx-0 mb-80px mb-md-40px p-35px trial-box-1 flex-column align-items-center"
@@ -2410,11 +2562,12 @@
           </h2>
           <a
             href="https://app.duukaz.com"
-            class="px-35px btn border-0 lh-1 text-white-50 bgcolor-sunset-orange-theme hover-bgcolor-dark-theme"
+            class="px-35px btn border-0 lh-1 bgcolor-sunset-orange-theme hover-bgcolor-dark-theme"
             style="
-              background-color: #000 !important;
-              color: #fff !important;
+              background-color: #fff !important;
+              color: #ff7a00 !important;
               border: none !important;
+              font-weight: 700 !important;
             "
             >Full featured trial</a
           >
